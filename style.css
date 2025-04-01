@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Plain Light";
+}
+
+#loader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    background-color: #0B0B0B;
+    padding: 18vh 10vw;
+}
+
+#wait {
+    position: relative;
+    top: 55vh;
+    left: 17vw;
+}
+
+.line {
+    overflow: hidden;
+    height: fit-content;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5vw;
+    position: relative;
+}
+
+#numloader {
+    display: flex;
+    padding-left: 2vw;
+    align-items: flex-start;
+    justify-content: center;
+    gap : 2.3vw
+}
+
+#numloader h5, #numloader h6 {
+    font-size: 3.5vw;
+    font-family: "Silk Serif";
+    font-weight: 200;
+}
+
+#numloader h5 {
+    /* background-color: red; */
+    width: 5vw;
+    text-align: right;
+}
+
+.line h1{
+    font-size: 6.5vw;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.line h2{
+    font-size: 6.5vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    opacity: 0;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+
+#h2{
+    height: 2vw;;
+    width: 2vw;
+    position: relative;
+    left: -2.2vw;
+    bottom: 0.1vw;
+}
+
+@keyframes anime {
+    0% {
+        font-family: "plain light";
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        font-weight: 500;
+        opacity: 1;
+    }
+    48% {
+        font-family: "plain light";
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        font-weight: 500;
+        opacity: 0;
+    }
+    50% {
+        font-family: "silk serif";
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        font-weight: 500;
+        opacity: 1;
+    }
+    100% {
+        font-family: "silk serif";
+        font-size: 5.8vw;
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        font-weight: 500;
+        opacity: 0;
+    }
+}
+
+#main {
+    position: relative;
+    background-color:  #0B0B0B;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #151515;
+}
