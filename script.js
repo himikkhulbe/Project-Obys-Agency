@@ -1,5 +1,5 @@
-let tl = gsap.timeline()
-
+function loadingAnimation(){
+    let tl = gsap.timeline()
 tl.from(".line h1", {
     y: 150,
     stagger: 0.3,
@@ -37,3 +37,5 @@ tl.from("#page1",{
         loader.style.display = "none"
     }
 })
+}
+loadingAnimation()
