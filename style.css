@@ -6,13 +6,29 @@
     font-family: "Plain Light";
 }
 
+body, html {
+    height: 100%;
+    width: 100%;
+    /* cursor: none; */
+}
+
+#cursor {
+    height: 2.5vw;
+    width: 2.5vw;
+    border-radius: 50%;
+    border: 1px solid #ffffff7e;
+    position: fixed;
+    z-index: 99;
+    mix-blend-mode: difference;
+}
+
 #loader {
     height: 100%;
     width: 100%;
     position: fixed;
     z-index: 99;
     background-color: #0B0B0B;
-    padding: 18vh 10vw;
+    padding: 18vh 8vw;
 }
 
 #wait {
@@ -115,4 +131,70 @@
     height: 100vh;
     width: 100%;
     background-color: #151515;
+}
+
+#page1 #nav {
+    padding: 3.5vw 6.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3vw;
+}
+
+#nav-part2 h4 {
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.hero {
+    width: 72%;
+    margin-left: 28%;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.hero:nth-child(2) {
+    margin-top: 16vh;
+}
+
+.hero h1{
+    text-transform: uppercase;
+    font-size: 7.5vw;
+    line-height: 7.5vw;
+    letter-spacing: 0.1vw;
+    /* font-weight: 600; */
+}
+
+#hero3 {
+    display: flex;
+    align-items: center;
+}
+
+.hero h2{
+    text-transform: uppercase;
+    font-size: 7.5vw;
+    line-height: 7.5vw;
+    letter-spacing: 0.1vw;
+    text-decoration: underline;
+}
+
+.hero h3{
+    text-transform: uppercase;
+    font-size: 7vw;
+    line-height: 7.5vw;
+    letter-spacing: 0.4vw;
+    padding-left: 0.2vw;
+}
+
+#hero3 h2:hover {
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 300;
+    color: transparent;
+    text-decoration: none;
 }

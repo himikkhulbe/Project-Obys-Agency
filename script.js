@@ -26,7 +26,7 @@ tl.to(".line h2", {
 tl.to("#loader",{
     opacity: 0,
     duration: 0.5,
-    delay: 1.5
+    delay: 0 /*chane to 1.5*/
 })
 
 tl.from("#page1",{
@@ -37,5 +37,27 @@ tl.from("#page1",{
         loader.style.display = "none"
     }
 })
+
+tl.from("#nav",{
+    opacity: 0
+})
+
+tl.from("#hero1 h1, #hero2 h1, #hero3 h2, #hero3 h3, #hero4 h1",{
+    y: 120,
+    stagger: 0.2
+})
 }
+
+function cursorAnimation(){
+    document.addEventListener("mousemove", function(dets){
+        gsap.to("#cursor",{
+            x: dets.x-20,
+            y: dets.y-20
+        })
+    })
+    
+    Shery.makeMagnet("#nav-part2 h4");
+}
+
 loadingAnimation()
+cursorAnimation()
