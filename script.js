@@ -55,8 +55,9 @@ function cursorAnimation(){
             y: dets.y-20
         })
     })
-    
+
     Shery.makeMagnet("#nav-part2 h4");
+
 }
 
 loadingAnimation()
