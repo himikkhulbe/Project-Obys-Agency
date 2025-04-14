@@ -78,7 +78,8 @@ body, html {
     text-transform: uppercase;
     font-weight: 500;
     opacity: 0;
-    animation-duration: 1.2s;
+    /* animation-name: loaderanime; */
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
 }
 
@@ -90,7 +91,7 @@ body, html {
     bottom: 0.1vw;
 }
 
-@keyframes anime {
+@keyframes loaderanime {
     0% {
         font-family: "plain light";
         -webkit-text-stroke: 1px #fff;
@@ -361,6 +362,7 @@ body, html {
     overflow-x: hidden;
     white-space: nowrap;
     display: flex;
+    margin-bottom: -3vw;
 }
 
 .m {
@@ -383,6 +385,7 @@ body, html {
     overflow-x: hidden;
     white-space: nowrap;
     display: flex;
+    margin-bottom: -3vw;
 }
 
 .m2 {
@@ -404,6 +407,9 @@ body, html {
 span {
     font-style: italic;
     color: transparent;
+    font-family: "silk serif";
+    position: relative;
+    bottom: 8%;
 }
 
 @keyframes marq {
